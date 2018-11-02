@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>KSoft</Authors>
+    <Company>KSoft</Company>
+    <Version>1.0.7</Version>
+    <Product>KSoft.AspNetCore.Hosting</Product>
+    <PackageId>KSoft.AspNetCore.Hosting</PackageId>
+    <AssemblyVersion>1.0.7.0</AssemblyVersion>
+    <FileVersion>1.0.7.0</FileVersion>
+    <Description>Tools for processing types. Extracting list of types from one type</Description>
+    <PackageTags>types</PackageTags>
+    <Copyright>KSoft</Copyright>
+    <PackageProjectUrl>https://github.com/jkleczkowski/KSoft.AspNetCore.Hosting/issues</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/jkleczkowski/KSoft.AspNetCore.Hosting</RepositoryUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="microsoft.extensions.configuration.environmentvariables" Version="2.1.1" />
+    <PackageReference Include="microsoft.extensions.configuration.json" Version="2.1.1" />
+    <PackageReference Include="Serilog.AspNetCore" Version="2.1.1" />
+    <PackageReference Include="Serilog.Enrichers.Thread" Version="3.0.0" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="2.6.1" />
+    <PackageReference Include="Serilog.Sinks.Literate" Version="3.0.0" />
+    <PackageReference Include="Serilog.Sinks.RollingFile" Version="3.3.0" />
+  </ItemGroup>
+</Project>
