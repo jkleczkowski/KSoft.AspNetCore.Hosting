@@ -14,7 +14,7 @@ namespace Microsoft.AspNetCore.Hosting
             //detecting run in container
             bool IsInDocker = System.Environment.GetEnvironmentVariable("DOTNET_RUNNING_IN_CONTAINER") == "true";
             // set listen port
-            int.TryParse(System.Environment.GetEnvironmentVariable("LISTEN_ON") ?? "58000", out int port);
+            int.TryParse(System.Environment.GetEnvironmentVariable("VIRTUAL_PORT") ?? "58000", out int port);
 
             builder
                 .ConfigureAppConfiguration((hostingContext, config) =>
